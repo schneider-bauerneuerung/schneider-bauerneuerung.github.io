@@ -1,0 +1,19 @@
+- nick: izenisek
+  firstname: Ilse
+  lastname: Zenisek
+  prefix:
+  postfix:
+  function: Administration
+  phone: +43 5 0804 666
+  mail:  zenisek@schneider-bauerneuerung.at
+  photo: izenisek.jpg
+
+- nick: gschneider
+  firstname: Günther
+  lastname: Schneider
+  prefix: Ing.
+  postfix:
+  function: Geschäftsführung
+  phone: +43 5 0804 666
+  mail:  schneider@schneider-bauerneuerung.at
+  photo: gschneider.jpg

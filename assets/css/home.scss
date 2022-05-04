@@ -1,0 +1,308 @@
+--- 
+# this ensures Jekyll reads the file to be transformed into CSS later 
+# only Main files contain this front matter, not partials. 
+---
+
+@import
+    "vars",
+    "home/header",
+    "blog/blogpost-teaser"
+;
+
+// carousel
+// ===========================================
+// $header-img: "{{ site.data.carousel.picturePath }}{{ site.data.carousel.defaultPicture }}";
+
+// {% for slot in site.data.carousel.slots %}
+// #slot-{{ forloop.index0 }} {
+//     background-image: url({{ site.data.carousel.picturePath }}{{ slot.picture }});
+// }
+// {% endfor %}
+// ===========================================
+
+
+// INFO
+
+.facts {
+  font-family: $sans-serif-font-stack;
+  font-style: normal;
+  text-align: left;
+}
+
+.facts div {
+  padding: 15px;
+  border: 1px solid $text-light;
+}
+
+
+.facts h4 {
+  margin-top: 0;
+  //font-weight: 700;
+}
+
+#info, #research, #contact {
+  padding-bottom: 50px;
+}
+
+table.info-table {
+  font-family: $sans-serif-font-stack;
+  font-size: 16px;
+}
+
+table.info-table td {
+  padding: 10px 0px 0px 0px;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.info-table tr td:first-child {
+  padding-right: 25px;
+  color: lighten($brand-primary, 40%);
+}
+
+table.info-table tr td:last-child {
+  //font-style: italic;
+  //font-family: $serif-font-stack;
+}
+
+// BLOG TEASER
+
+.blog-button {
+  margin: 40px 0 30px 0;
+}
+
+// INFRASTRUCTURE
+
+.topic-box {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.topic-box:hover {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.topic-box .image-box {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 0/0 a;
+}
+
+.image-box img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.image-box footer small {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  font-size: 10px;
+  font-family: $sans-serif-font-stack;
+  color: #999;
+}
+
+#image-dellblade {
+  
+}
+
+#image-holo {
+  
+}
+
+#image-lasertec {
+  
+}
+
+.topic-box hr {
+  border-color: #eeeeee;
+  transition: border 0.6s linear;
+  max-width: none;
+  border-width: 1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.topic-box:hover {
+  hr.grey-light {
+    border-color: $brand-primary;
+  }
+}
+
+
+// PEOPLE
+
+.card-row {
+  margin-bottom: 25px;
+}
+
+.card-row:last-child {
+  margin-bottom: inherit;
+}
+
+.card h4 span:first-child {
+  display: block;
+  font-size: 12px;
+}
+
+.card h4 span:last-child {
+  font-size: 12px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  font-size: 12px;
+}
+
+.card ul li span:first-child {
+  width: 60px;
+}
+
+.card {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+@media(min-width: 1200px) {
+  .card:last-child {
+    padding-right: 15px;
+  }
+
+  .card:first-child {
+    padding-left: 15px;
+  }
+
+  .card {
+    padding-bottom: 0;
+  }
+}
+
+.card>div {
+  transition: border-color 0.2s linear;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid $border;
+}
+
+.card>div:hover {
+  border-color: $brand-primary;
+}
+
+.card img {
+  float: left;
+  margin: 0px 15px 0px 0px;
+}
+
+
+// PARTNERS
+
+.partner {
+  text-align: center;
+  color: $brand-grey-light;
+}
+
+.partner a {
+  color: $brand-grey-light;
+  display: block;
+  width: 100%;
+  height: 125px;
+}
+
+.partner a:hover {  
+  text-decoration: none;
+}
+
+.partner svg {
+  width: 75%;
+  height: 125px;
+}
+
+.partner svg path,
+.partner svg polygon {
+  fill: $brand-grey-light;
+  transition: fill .5s ease-out;
+}
+ 
+.partner:hover {
+  svg path, svg polygon {
+    fill: $brand-primary;
+  }
+}
+
+.partner .valign-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.partner img {
+  width: 75%;
+  max-height: 125px;
+  vertical-align: middle;
+}
+
+.partner img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  transition: all .5s ease-out;
+}
+
+/* Disable grayscale on hover */
+.partner img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+
+@media(max-width: 767px) {
+  .partner img,
+  .partner svg {
+    width: 50%;
+    max-height: 125px;
+  }
+}
+
+// CONTACT
+
+.contactlist {
+    text-align: left;
+    list-style: none;
+    padding-left: none;
+    margin-left: none;
+}
+
+@media(max-width: 1200px) {
+    .contact-info>div {
+    margin-bottom: 50px;
+  }
+  .contact-info>div:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.map-section {
+    height: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+}
+
+#map {
+  height: 100%;
+}

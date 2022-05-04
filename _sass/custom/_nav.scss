@@ -1,0 +1,214 @@
+.navbar-default {
+    // border-color: rgba(34,34,34,.05);
+    border: none;
+    font-family: $sans-serif-font-stack;
+    background-color: $background-color;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    // text-transform: lowercase;
+    font-family: $sans-serif-font-stack;
+    font-weight: 700;
+    color: $brand-primary;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: $brand-highlight;
+}
+
+.navbar-header {
+    height: 50px;
+}
+
+.navbar-brand {
+    height: 50px;
+    padding: 0px 15px;
+}
+
+.navbar-brand span {
+    display: inline-block;
+    padding: 15px 15px 15px 15px;
+}
+
+.sb-logo {
+    // width: 36px;
+    // height: 50px;
+    height: 75px;
+    width: 50px;
+    display: inline-block;
+    float: left;
+    fill: $brand-primary;
+}
+
+.sb-logo path, .sb-logo polygon {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.sb-logo polygon, .sb-logo path {
+    // fill: rgba(255,255,255,.7);
+    fill: $brand-primary;
+}
+.sb-logo:hover {   
+    fill: $brand-primary;
+}
+
+
+
+// #sfl-logo-bulpflash,
+// #sfl-logo-bulp {
+//     fill: $brand-primary;
+// }
+
+// #sfl-logo-building,
+// #sfl-logo-chimney1,
+// #sfl-logo-chimney2 {
+//     fill: $brand-grey;
+// }
+
+.sb-logo:hover {   
+    fill: $brand-primary;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    // text-transform: lowercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: $brand-primary;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: $brand-primary!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+.visible2 {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.navbar-default:after {
+    content:"";
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        // border-color: rgba(255,255,255,.5);
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+        // color: $brand-primary;
+    }
+
+    .sb-logo polygon, .sb-logo path{
+        fill: rgba(255,255,255,.7);
+        // fill: $brand-primary;
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+        // color: $brand-highlight;
+
+        .sb-logo polygon, .sb-logo path {
+            fill: #fff;
+            // fill: $brand-highlight;
+        }
+    }
+
+    .navbar-default .nav>li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,.7);        
+    }
+
+    .navbar-default .nav>li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .sb-logo {
+        width: 200px;
+        // height: 60px;
+        height: 75px;
+    }
+
+    .navbar-brand span {
+        display: inline-block;
+        padding: 25px 25px 25px 25px;
+    }
+
+    .navbar-right li a {
+        // padding-top: 30px;
+        padding: 25px 25px 25px 25px;
+    }
+
+    .navbar-header {
+        // height: 60px;
+        height: 75px;
+    }
+    
+    .navbar-brand {
+        height: 75px;
+        padding: 0px 15px;
+    }
+
+    .navbar-default.affix {
+        // border-color: rgba(34,34,34,.05);
+        background-color: #fff;        
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 15px;
+        color: $brand-primary;
+
+        .sb-logo polygon, .sb-logo path {
+            fill: $brand-primary;
+        }
+    
+        // #spal1, #spal2, #spal3, #spal4, #spal5  { fill: $brand-secondary; }
+        // #spal6 { fill: $brand-info; }
+        // #spal8 { fill: $brand-warning; }
+        // #spal12 { fill: $brand-danger; }
+        // #spal4 { fill: $brand-danger; }
+        // #spal5 { fill: $brand-success; }
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: $brand-highlight;
+
+        .spa-logo polygon, .spa-logo path {
+            fill: $brand-highlight;
+        }
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: $brand-primary;
+    }
+}
+

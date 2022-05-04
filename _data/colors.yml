@@ -1,0 +1,15 @@
+dark-grey: "#333333"
+grey: "#777777"
+light-grey: "#888888"
+
+text: "#333333"
+text-light: "#eeeeee"
+text-mid: "#aaaaaa"
+
+brand-primary: "#8BD8BD"
+brand-secondary: "#243665"
+
+green: "#7CAE7A"
+orange: "#f0ad4e"
+red: "#d9534f"
+grey-blue: "#90b8dc"

@@ -1,0 +1,24 @@
+@import
+  "custom/animate.min",  
+  "custom/bootstrap.min",
+  "custom/nav",
+  "custom/creative",
+  "custom/footer"
+;
+
+body {
+  background-color: $background-color;
+}
+
+// IMPRINT
+
+.imprint-infolist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.imprint-infolist li {
+  line-height: 1.7em;
+}

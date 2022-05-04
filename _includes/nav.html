@@ -1,0 +1,59 @@
+{% capture pagescroll %}{% endcapture %}
+
+{% if page.lang == site.lang %}
+    {% if page.url == "/" %}
+        {% capture prefix %}{% endcapture %}
+        {% capture pagescroll %}page-scroll{% endcapture %}
+    {% else %}
+        {% capture prefix %}/{% endcapture %}
+    {% endif %}
+{% else %}
+    {% capture lang_baseurl %}/{{page.lang}}/{% endcapture %}
+    {% if page.url == lang_baseurl %}
+        {% capture pagescroll %}page-scroll{% endcapture %}
+    {% endif %}
+    {% capture prefix %}/{{ page.lang }}/{% endcapture %}
+{% endif %}
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top{{ include.navcss }}">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand {{ pagescroll }}" href="#page-top">{% include svg/sb-logo_edit2.svg %}<span></span></a>
+            <!-- <a class="navbar-iwb2020" href="{{ site.data.links.iwb2020 }}" target="_blank"><span></span></a> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="{{ pagescroll }}" href="#ueberuns">Über uns</a>
+                </li>
+                <li>
+                    {% if include.home %}
+                    <a class="{{ pagescroll }}" href="#news">News</a>
+                    {% else %}
+                    <a class="" href="/news">News</a>
+                    {% endif %}
+                </li>
+                <li>
+                    <a class="{{ pagescroll }}" href="#leistungen">Leistungen</a>
+                </li>
+                <li>
+                    <a class="{{ pagescroll }}" href="#referenzen">Referenzen</a>
+                </li>
+                <li>
+                    <a class="{{ pagescroll }}" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

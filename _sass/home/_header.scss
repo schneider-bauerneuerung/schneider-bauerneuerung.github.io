@@ -1,0 +1,335 @@
+
+.headerCodeBlock {
+    position: relative;
+    width: 600px;
+    text-align: left;
+    padding-top: 200px;
+    margin: 0px auto 0px auto;
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+    
+    .todo {
+        font-style: italic;
+        // font-family: 'PragmataPro';
+        font-family: 'Source Sans Pro';
+        color: $brand-primary;
+        // font-size: 75px;
+    }
+}
+
+
+
+.home-header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    // background-color: #333;
+    background-color: $brand-secondary;
+}
+
+.home-header::before { 
+    content: '';
+    background: transparent url($header-pattern) repeat top left; 
+}
+
+.slot {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    //background-image: url($header-img);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    display: block;
+    opacity: 0.0;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+    opacity: 1.0;
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s; 
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s; 
+}
+
+@keyframes fade {
+  0% { opacity: .6 } 
+  100% { opacity: 1 }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.0 } 
+  100% { opacity: 1 }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1 } 
+  100% { opacity: 0.0 }
+}
+
+.home-header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: left;
+}
+
+.picture-info {
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 10px;
+    font-family: $monospace1-font-stack;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.home-header .header-content .header-content-inner h1,
+.home-header .header-content .header-content-inner h2,
+.home-header .header-content .header-content-inner h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1em;
+    border: 0;
+}
+
+.home-header .header-content .header-content-inner h1 {
+    font-family: $monospace1-font-stack;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $header;
+
+}
+
+.home-header .header-content .header-content-inner h2 {
+    font-family: $monospace1-font-stack;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+    color: $header;
+}
+
+.home-header .header-content .header-content-inner hr {
+    margin: 30px 0px;
+}
+
+.home-header .header-content .header-content-inner h3 {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: $monospace2-font-stack;
+    color: $header;
+}
+
+.home-header .header-content .header-content-inner span {
+    background-color: #333;
+    opacity: 0.75;
+    display: inline-block;
+    padding: 0px 25px;
+    line-height: 1.55em;
+    min-width: 0;
+    margin: 0;
+}
+
+.home-header .header-content .header-content-inner h3 span {
+    line-height: 2em;
+}
+
+@media(min-width:768px) {
+    .home-header {
+        min-height: 100%;
+    }
+
+    .home-header .header-content {
+        position: absolute;
+        top: 75%;
+        height: 50%;
+        padding: 0 50px 50px 100px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .home-header .header-content .header-content-inner {
+        max-width: 100%;
+    }
+
+    .home-header .header-content .header-content-inner h3 {
+        font-size: 24px;
+    }
+}
+
+.header-section {
+	padding-top: 150px;
+}
+
+.section-heading {
+    margin-top: 0;
+}
+
+
+/* progress bar */
+
+#progress-bar {
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+}
+
+#progress {
+    position: relative;
+    width: 0%;
+    height: 100%;
+    background-color: $brand-primary-light;
+}
+
+/*
+.header-logolinks {
+    display: none;
+}
+*/
+
+//@media(min-width:768px) {
+    .header-logolinks {
+        position: absolute;
+        bottom: 6px;
+        right: 0px;
+        display: inline-block;
+        padding: 5px 0px 0px 0px;
+        background-color: #fff;
+        opacity: 0.8;
+    }
+
+    .header-logolinks a {
+        display: inline-block;
+    }
+
+    .header-logolinks span {
+        display: block;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        margin: 0px 10px 0px 10px;
+    }
+
+    // .header-iwb2020 span {
+    //     height: 75px;
+    //     width: 300px;
+    //     background-image: url($iwb-logo);
+
+    // }
+
+    // .header-looe span {
+    //     height: 65px;
+    //     width: 65px;
+    //     background-image: url($looe-logo);        
+    //     margin-bottom: 7px;
+    // }
+
+    // .header-fhooe span {
+    //     height: 60px;
+    //     width: 154px;
+    //     background-image: url($fhooe-logo);
+    //     margin-bottom: 10px;
+    // }
+
+//}
+
+@media(max-width:767px) {
+        .header-iwb2020 span {
+        height: 50px;
+        width: 200px;
+    }
+
+    .header-looe span {
+        height: 30px;
+        width: 55px;
+        margin-bottom: 14px;
+    }
+
+    .header-fhooe span {
+        height: 30px;
+        width: 77px;
+        margin-bottom: 14px;
+    }
+}
+
+
+
+/* Next & previous buttons */
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 30px;
+  margin-top: -50px;
+  color: $text-mid;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+}
+
+#prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color: rgba(180,180,180,0.8);
+}
+
+.typing-h1:after {
+  content: '';
+  width: 30px;
+  height: 4px;
+  background: white;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+.typing-p:after {
+  content: '';
+  width: 15px;
+  height: 2px;
+  background: white;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

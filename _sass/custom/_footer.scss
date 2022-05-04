@@ -1,0 +1,141 @@
+footer.main-footer p {
+    padding: 0;
+}
+
+footer.main-footer>section {
+    color: $brand-grey-light;
+    background-color: $brand-grey;
+    font-family: $sans-serif-font-stack;
+    font-size: 14px;
+    border-top: 5px solid $brand-grey-dark;
+
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+footer.main-footer div,
+footer.main-footer p {
+    font-family: $sans-serif-font-stack;
+    font-size: 14px;
+}
+
+footer.main-footer .special-info {
+    margin-top: 30px;
+    font-size: 14px;
+    color: darken($brand-grey-light, 15%);
+}
+
+.linklist {
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.linklist li {
+    padding-bottom: 3px;
+}
+
+@media(max-width: 1200px) {
+    .main-footer .col-sm-6 {
+        margin-top: 30px;
+    }
+}
+
+
+.footer-link {
+    color: $brand_primary;
+    display: inline-block;
+}
+
+.lang-selector {
+    display: inline-block;
+    line-height: 1em;
+    margin: 0px 0px 0px -8px;
+}
+
+.lang-link.active-lang {
+    color: $brand_primary;
+}
+
+.iconlist {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.icon {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.icon.icon-fhooe {
+    width: 12em;
+    height: 6em;
+}
+
+.icon-link {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    margin-bottom: 15px;
+}
+
+.icon-link-twitter {
+    margin-bottom: 10px;
+}
+
+.icon-link-youtube {
+    margin-bottom: 10px;
+}
+
+.icon-link-rss {
+    margin-bottom: 0;
+}
+
+.icon.icon-twitter,
+.icon.icon-github,
+.icon.icon-youtube,
+.icon.icon-rss {
+    width: 100%;
+    height: 100%;
+}
+
+.icon>svg, .icon>svg>path {
+    width: 100%;
+    height: 100%;
+    fill: $brand-grey-light;
+    transition: fill .5 ease-out;
+    transition-property: fill;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+}
+
+.icon>svg:hover {
+    
+    path {
+        fill: $brand-primary;
+    }
+    
+}
+
+.icon>svg:hover {
+    fill: $brand-primary;
+}
+
+footer.main-footer {
+    color: $brand-grey-light;
+}
+
+footer.main-footer a {
+    color: $brand-grey-light;
+}
+
+footer.main-footer a:hover {
+    color: $brand-grey-light2;
+}
+
+footer h4 {
+    font-weight: 600;
+}

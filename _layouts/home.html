@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" href="{{ "/assets/css/home.css" | relative_url }}">
+    </head>
+    <!-- <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav"> -->
+    <body id="page-top"></body>
+        {% include nav.html home=true navcss="" %}
+        {% include home_header.html %}
+        {{ content }}
+        {% include footer.html %}
+        {% include foot.html %}
+    </body>
+    <!-- <script src="{{ "/assets/js/creative.js" | relative_url }}"></script> -->
+</html>

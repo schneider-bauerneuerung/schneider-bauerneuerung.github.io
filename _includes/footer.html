@@ -1,0 +1,71 @@
+
+{% if page.lang == site.lang or page.lang == [] %}
+    {% assign _lang = site.lang %}
+    {% capture footer_prefix %}/{% endcapture %}
+{% else %}
+    {% assign _lang = page.lang %}
+    {% capture footer_prefix %}/{{ page.lang }}/{% endcapture %}
+{% endif %}
+
+<footer class="main-footer">
+    <section id="footer">
+        <div class="container">
+                
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div>
+                        <a class="footer-link" href="{{ site.data.links.self }}" target="_blank">
+                            <span class="icon icon-fhooe">{% include svg/sb-logo_edit2.svg %}</span>
+                        </a>
+                    </div>
+                    <div>Schneider Bauerneuerung GmbH</div>
+                    <div>Wiener Straße 36, 4490 St. Florian</div>
+                    <div>Tel.Nr.: +43-7224-22240-0</div>
+                    <div><a href="mailto:office@schneider-bauerneuerung.at">Mail: office@schneider-bauerneuerung.at</a></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4>Quick Links</h4>
+                    <ul class="linklist">
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4>Infos</h4>
+                    <ul class="linklist">
+                        <li><a href="{{ footer_prefix }}impressum">IImpressum</a></li>
+                        <li><a href="{{ footer_prefix }}datenschutz">Datenschutz</a></li>
+                        <li><a href="{{ footer_prefix }}sitemap">Sitemap</a></li>
+                        <li><a href="{{ footer_prefix }}#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-12">
+                    <ul class="iconlist">                        
+                        <li><a class="icon-link" href="{{ "/feed.xml" | relative_url }}" target="_blank"><span class="icon icon-rss">{% include svg/icon-rss.svg %}</span></a></li>
+                        <!-- <li class="lang-selector">
+                            {% if _lang == "de" %}
+                                <span id="lang-link-de" class="lang-link active-lang" >DE</span>
+                                <a id="lang-link-en" class="lang-link" href="/en/">EN</a>
+                            {% else %}
+                                <a id="lang-link-de" class="lang-link" href="/" >DE</a>
+                                <span id="lang-link-en" class="lang-link active-lang" >EN</span>
+                            {% endif %}
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="row special-info">
+                <!-- <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div>&copy 2022 | {{ site.data.i18n.t.footer.fhooefull[_lang] }}</div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <p>{{ site.data.i18n.t.footer.fundingtext[_lang] }} <a href="{{ site.data.i18n.t.footer.uv30-link[_lang] }}">www.uppervision.at</a>.</p>
+                </div> -->
+            </div>
+            <!--
+            <div class="row text-center funding-info">
+                <p>Smart Factory Lab is co-financed by the "Europäischen Fonds für regionale Entwicklung" and the country of Upper Austria. For more information go to <a href="{{ site.data.links.iwb2020 }}">www.iwb2020.at</a></p>
+            </div>
+            -->
+        </div>
+    </section>
+</footer>

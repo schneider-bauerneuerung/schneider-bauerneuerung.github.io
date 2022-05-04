@@ -1,0 +1,98 @@
+$brand-primary: #FFB400; // #8BD8BD;
+$brand-secondary: #000098;
+$brand-primary-light: lighten($brand-primary, 15%);
+$brand-highlight: darken($brand-primary, 8.5%);
+$brand-secondary-highlight: darken($brand-secondary, 8.5%);
+$brand-success: #5cb85c;
+$brand-info:    #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger:  #d9534f;
+
+$brand-grey:    #333333;
+$brand-grey-dark: darken($brand-grey, 5%);
+$brand-grey-light: lighten($brand-grey, 35%);
+$brand-grey-light2: lighten($brand-grey, 50%);
+
+$sans-serif-font-stack: 'Source Sans Pro', 'Open Sans','Helvetica Neue',Arial,sans-serif;
+$serif-font-stack: 'Source Serif Pro', 'Times New Roman', 'Helvetica Neue',Arial,sans-serif;
+
+@font-face {
+  font-family: "PragmataPro";
+  src: url('../../assets/fonts/PragmataPro.ttf');
+}
+
+// $monospace1-font-stack: 'Ubuntu Mono', 'Pragmata Pro', 'Consolas';
+// $monospace2-font-stack: 'Source Code Pro', 'Consolas', 'Courier';
+// $monospace1-font-stack: 'Open Sans';
+// $monospace2-font-stack: 'Merriweather';
+$monospace1-font-stack: 'Source Sans Pro';
+$monospace2-font-stack: 'Source Code Pro';
+
+
+
+$navbar-height: 60px;
+
+// ================================================
+
+$header:		#f9f9f9;
+$base-line-height: 1.5 !default;
+
+$input-placeholder: lighten($brand-primary, 15%);
+
+$bg-dark: #444;
+$text-dark: #333333;
+$text-mid: #dddddd;
+$text-light: #ffffff;
+
+$border: #eeeeee;
+$border-highlight: #aaaaaa;
+
+$header-pattern: "../../assets/img/pattern.png";
+$looe-logo: "../../assets/img/looe_small.png";
+$fhooe-logo: "../../assets/img/fhooe.png";
+
+// ================================================
+
+// definitons for syntax highlighting
+$spacing-unit:     30px !default;
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+// Define defaults for each variable.
+
+$base-font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #ffffff !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+

@@ -33,7 +33,7 @@ lang: de
             </div>
         </div>
         {% else %}
-        <div class="row"><div class="col-lg-12"><h4>Tut uns Leid, im Moment stehen keine Beiträge zu diesem Thema zur Verfügung.</h4></div></div>
+        <div class="row"><div class="col-lg-12"><h4>Tut uns Leid, im Moment stehen keine Newsbeiträge zur Verfügung.</h4></div></div>
         {% endif %}
     </div>
 </section>

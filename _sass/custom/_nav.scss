@@ -21,11 +21,11 @@
 }
 
 .navbar-header {
-    height: 50px;
+    height: 75px;
 }
 
 .navbar-brand {
-    height: 50px;
+    height: 75px;
     padding: 0px 15px;
 }
 
@@ -38,13 +38,13 @@
     // width: 36px;
     // height: 50px;
     height: 75px;
-    width: 50px;
+    width: 200px;
     display: inline-block;
     float: left;
-    fill: $brand-primary;
+    // fill: $brand-primary;
 }
 
-.sb-logo path, .sb-logo polygon {
+.sb-logo path, .sb-logo polygon, .sb-logo rect {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     transition: all 1s;
@@ -52,10 +52,10 @@
 
 .sb-logo polygon, .sb-logo path {
     // fill: rgba(255,255,255,.7);
-    fill: $brand-primary;
+    // fill: $brand-primary;
 }
 .sb-logo:hover {   
-    fill: $brand-primary;
+    // fill: $brand-primary;
 }
 
 
@@ -120,7 +120,7 @@
     }
 
     .sb-logo polygon, .sb-logo path{
-        fill: rgba(255,255,255,.7);
+        // fill: rgba(255,255,255,.7);
         // fill: $brand-primary;
     }
 
@@ -129,8 +129,10 @@
         color: #fff;
         // color: $brand-highlight;
 
-        .sb-logo polygon, .sb-logo path {
+        .sb-logo #sb-logo-upperbox {
+            // fill: lighten($brand-primary, 25%);
             fill: #fff;
+            // fill: #fff;
             // fill: $brand-highlight;
         }
     }
@@ -181,7 +183,7 @@
         color: $brand-primary;
 
         .sb-logo polygon, .sb-logo path {
-            fill: $brand-primary;
+            // fill: $brand-primary;
         }
     
         // #spal1, #spal2, #spal3, #spal4, #spal5  { fill: $brand-secondary; }

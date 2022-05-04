@@ -27,6 +27,8 @@
     text-align: center;
     color: #fff;
     // background-color: #333;
+    // background-image: linear-gradient($brand-secondary, lighten($brand-secondary, 25%));
+    background-image: linear-gradient($brand-secondary, darken($brand-secondary, 25%));
     background-color: $brand-secondary;
 }
 

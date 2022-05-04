@@ -69,9 +69,25 @@ footer.main-footer .special-info {
     line-height: 1em;
 }
 
-.icon.icon-fhooe {
+.icon.icon-sb {
     width: 12em;
     height: 6em;
+}
+
+.icon-sb #sb-logo-upperbox {
+    fill: #555;
+}
+
+.icon-sb #sb-logo-lowerbox {
+    fill: #333;
+}
+
+.icon-sb #sb-logo-uppertext path {
+    fill: #999;
+}
+
+.icon-sb #sb-logo-lowertext path {
+    fill: #777;
 }
 
 .icon-link {

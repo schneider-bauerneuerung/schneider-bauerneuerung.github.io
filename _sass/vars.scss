@@ -21,6 +21,16 @@ $serif-font-stack: 'Source Serif Pro', 'Times New Roman', 'Helvetica Neue',Arial
   src: url('../../assets/fonts/PragmataPro.ttf');
 }
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url('../../assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url('../../assets/fonts/Source_Serif_Pro/SourceSerifPro-Regular.ttf');
+}
+
 // $monospace1-font-stack: 'Ubuntu Mono', 'Pragmata Pro', 'Consolas';
 // $monospace2-font-stack: 'Source Code Pro', 'Consolas', 'Courier';
 // $monospace1-font-stack: 'Open Sans';
